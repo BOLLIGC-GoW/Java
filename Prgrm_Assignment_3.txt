@@ -1,0 +1,53 @@
+CSCI 3320 Advanced Programming
+Aarti Munjal
+	
+Prgrm Assignment #3
+Charles Bollig
+
+Assistance with algorithm from: http://www.geeksforgeeks.org/lowest-common-ancestor-in-a-binary-search-tree/
+
+1. Are there different ways to solve it?
+
+	There are likely different ways to solve this, but, as with most methods involving 
+	traversing through trees, recursion is the simplest. 
+
+	There is a simpler way to solve this if one can pass in the depth of the tree as a 
+	parameter. However, per the assignment instructions, this was not allowed. In addition,
+	algorithms should exist to solve the most general case.
+
+2. What is the complexity of your algorithm?
+
+	a) Space Complexity
+
+		The space complexity of this algorithm is relatively straightforward. At each recursion
+		call, two new variables are created: leftSide and rightSide. The # of variables created
+		is based on the depth of the tree, which can vary.
+
+		S(2n) = S(n)
+
+	b) Time Complexity
+
+		The time complexity is based on the height of the tree. The height in this particular 
+		program is set, but that may not always be the case. Therefore, the height is variable, and n.
+		
+		Furthermore, the algorithm splits the tree based on where it finds the nodes. Therefore it
+		is a log() based algorithm.
+
+		O(log2(n)) = O(log(n))
+
+3. Is your solution efficient?
+
+	The solution seems as efficient as I can see it. I didn't attempt another method because I feel like
+	recursion was the best choice. 
+
+	
+4. Can you use a different data structure and propose a better solution?
+
+	This was the only data structure that was allowed by the assignment. It would be possible to read
+	the nodes into the array, then do some complicated math to find the common ancestor, but this isn't
+	any better. In fact, you would need to traverse the tree AND create an array.
+	
+EXTRA:
+
+	I spent about 15hrs on this assignment. 
+

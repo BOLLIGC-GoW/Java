@@ -1,0 +1,42 @@
+CSCI 3320 Advanced Programming
+	
+Prgrm Assignment #4
+Charles Bollig
+
+Assistance with algorithm from: http://stackoverflow.com/questions/4773807/searching-in-an-sorted-and-rotated-array
+
+1. What is the complexity of your algorithm?
+
+	a) Space Complexity
+
+	The space complexity is 0(log(n)) because each time the array is partitioned, a new one of half the size
+	must be created. However, this only occurs until the index element is found. This
+	is log base 2 of n, but for all importance, log(n).
+
+	S(log(n))
+
+	b) Time Complexity
+
+	The time complexity of my algorithm is O(log(n)) as per the instructions for the assignment.
+	When the pivot point is determined, the array is partitioned into two parts. Then, recursively
+	the array is continuously split into further two parts until the index element is found. This
+	is log base 2 of n, but for all importance, log(n).
+
+	O(log(n))
+
+2. Is your solution efficient?
+
+	My solution is about as efficient as it could be in terms of time and space complexity.
+	
+	The only inefficiency I have in my program has to do with error checking. Some of my error checking runs
+	O(n^2) because I have to make sure a value is not repeated in the array.
+	
+3. Are there different ways to solve it?
+
+	There is a different way to solve it that I researched. However, this method does not use 
+	recursion. The method uses looping. Unfortunately, this increases the time complexity.
+	Honestly, I would have preferred to use this method over recursion. This became extremely complicated very quickly. 
+
+Extra:
+
+	I spent about 15hrs on this assignment

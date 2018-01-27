@@ -1,0 +1,51 @@
+
+	CSCI 3320 Advanced Programming
+	Aarti Munjal
+		
+	Prgrm Assignment #2
+	Charles Bollig
+
+1. Are there different ways to solve it?
+
+	There are different ways to solve this. An original algorithm I created involved looping and checking each stack
+	for whether or not the item below it was bigger or smaller. Unfortunately, I wasn't 1) ever able to devise a
+	reliable solution when there were more than 2 disks, and 2) the time compexity was insanely high. 
+
+	The best way, I found, to solve this was to find the method for n=2 disks. If the program can solve itself for 
+	that much, it can solve itself for any value of n.
+
+2. What is the complexity of your algorithm?
+
+	a) Space Complexity
+
+		The Space Complexity of my algorithm is constant. As I use stacks to push and pop elements, I do not create
+		entirely new structures every time I move a disk. In addition, the largest a stack will ever be is
+		the user input k, which is constant.
+
+		S(k)
+
+	b) Time Complexity
+
+		The Time Complexity of my algorithm is also constant. Even though there is a great deal of 
+		recursion, the most amount of time that the algorithm will ever take to complete is (2^k)-1,
+		which is still constant. 
+
+		O(k)
+
+3. Is your solution efficient?
+
+	The solution is the most efficient means I was able to derive (with help). There may be a more efficient means,
+	but if I was that smart, I probably wouldn't waste my time getting a degree. On to the money!!!
+
+4. Can you use a different data structure and propose a better solution?
+
+	Using a Stack is probably the most efficient data structure to use for this solution, espcially in Java.
+	Utilizing an extended Stack in the TowerClass keeps the time and space complexity extremely manageable.
+	Even if a user enters some ungodly number for the amount of disks, the program will always take (2^n)-1 
+	steps to complete the puzzle (with some other detail keeping constants mixed in there). 
+
+EXTRA:
+
+	In my class, I created a static variable that could be used be all objects of the class (a count). This way
+	I was able to keep track of what Tower I was currently on to print to the user.
+

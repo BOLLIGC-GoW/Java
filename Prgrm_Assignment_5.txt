@@ -1,0 +1,41 @@
+
+	CSCI 3320 Advanced Programming
+		
+	Prgrm Assignment #5
+	Charles Bollig
+
+1. Is your solution deadlock free? Justify with an example.
+
+	My program never hangs. This is a good indication that there is no deadlock, or fighting over
+	resources. I use both the 'synchronized' keyword and locks to make sure
+	that the necessary resources are allocated to only one thread at a time.
+
+	While debugging my code, there was a section included that printed whenever a philosopher was
+	rejected from the resources that it needed. This is not included in the final code, but it can 
+	easily be turned on to verify. 
+
+	This proves that if the philosopher did not have access to BOTH resources, it would be denied - 
+	thus preventing deadlock.
+	
+
+2. Does your solution guarantee no starvation? Justify in a few sentences.
+
+	My solution is starvation free as well.  
+
+	At the end of my code, I print how many times each of the philosophers was able to 
+	eat. More often than not, one philosopher has eaten a total amount of times that is within 8-9
+	(out of 150+) of any other philosopher. This proves that none of the philosophers are experiencing 
+	any kind of starvation.
+
+3. The most challenging part of solving this problem.
+
+	The most challenging part of solving this problem was the manageResources() function I 
+	borrowed from Professor Bob. Logically, everything was fine with my code, but no locks were
+	being placed on resources. 
+
+	I realized that 'break' code needed to be placed after each case statement. His code doesn't
+	work.
+
+4. How much time?
+
+	In all, I spent about 8hrs on this assignment.

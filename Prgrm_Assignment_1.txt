@@ -1,0 +1,46 @@
+	CSCI 3320 Advanced Programming
+	Aarti Munjal
+		
+	Prgrm Assignment #1
+	Charles Bollig
+
+
+1. Are there different ways to solve it?
+
+	I think there is a better way to solve this, but it is not using Java. If this could be done with Python, there are better
+	methods on determining the existence of substrings within strings without the need of converting into an array. 
+
+	I wouldn't even have made an array if the assignment didn't require so. However, being that it was required, I think this 
+	is the best way. Determining difference in size using the absolute value function allows you to subtract the two locations'
+	respective values to return a consistent 'gap size'.
+
+2. What is the complexity of your algorithm?
+
+	a) Space Complexity
+
+		My program isn't the most efficient in terms of Space Complexity, but it is more to a lack of capability
+		in Java than my own programming. I created a structure within my sub function to check whether the words were in 
+		string. I hade to create a whole new list for one single operation. However, if Java Arrays were able to do 
+		this without looping, I wouldn't have to. It's a sacrifice in Space Complexity for Average Case/Best
+		Case Time Complexity improvement. 
+
+		S(n^2)
+
+	b) Time Complexity
+
+		There are a lot of constant procedures, but we aren't really concerned with that, yeah? My algorithm requires that I
+		traverse the array of strings only once to determine the 'gap size'. Therefore:
+	
+		O(n) - linear worst/average case
+		O(1) - best case
+
+3. Is your solution efficient?
+
+	My solution is extremely efficient. No extra variables are created that aren't needed. Any unnecessary procudures 
+	have been excluded. Without being able to sort the array, this is about as good as it gets.
+
+4. Can you use a different data structure and propose a better solution?
+
+	Probably. However, my understanding of different data structures isn't super comprehensive. Based on the data structures 
+	available that I am familiar with, an array/list is probably the best. 
+	
